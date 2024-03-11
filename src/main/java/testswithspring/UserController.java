@@ -5,11 +5,10 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class UserController {
-
     @Autowired
-    private StudentJpaRepoInterface studentJpaRepoInterface;
+    StudentService studentService;
 
     public void justry(){
-        studentJpaRepoInterface.save(new StudentJpaRepo());
+        studentService.add(StudentJpaRepo.builder().name("Sahil").build());
     }
 }

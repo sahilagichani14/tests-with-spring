@@ -28,7 +28,7 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@RunWith(SpringRunner.class) //instruct Junit4 that we are running spring application, usually for testing service+data layer as integration test
+//@RunWith(SpringRunner.class) //instruct Junit4 that we are running spring application, usually for testing service+data layer as integration test
 // @RunWith(MockitoJUnitRunner.class) // instruct Junit4 env that we will use Mock objects
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE) //tell Junit that its SpringBoot app so Junit env bootstrap all required spring components, we specify webEnvironment to remove all controllers from context
 // @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) // tell Junit to provide all servlet engine behaviour, & load controllers, service. repository
